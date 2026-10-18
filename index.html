@@ -3,10 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashley Stro</title>
+  <title>Ashley | Marketing and Content Leader</title>
+  <meta name="description" content="Senior marketing and content leader. Fifteen years building teams, brands, and owned channels at Amazon, Coca-Cola, Spredfast, and Porch Group.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world.</h1>
-  <p>Portfolio coming soon.</p>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Ashley</a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <p class="eyebrow">Marketing and content leadership</p>
+      <h1>I build marketing teams and the channels they own.</h1>
+      <p class="lede">Fifteen years of leading people, launching brands, and turning content into a business asset. Direct about strategy, wry about everything else.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="#work">See the work</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <p>I lead marketing for the Inspection business at Porch Group, where I built the team from the ground up. Before that, I led owned content and channels at Amazon and ran communications at Spredfast.</p>
+        <p>My focus is simple: clear positioning, disciplined execution, and teams that do their best work. I am now looking at VP and Head of Marketing roles at AI and tech-forward companies.</p>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Selected work</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="card-tag">Amazon</p>
+          <h3>About Amazon</h3>
+          <p>Launched the company's owned news and information hub, giving Amazon a direct voice to customers, press, and the public.</p>
+        </article>
+        <article class="card">
+          <p class="card-tag">Amazon</p>
+          <h3>Day One blog ecosystem</h3>
+          <p>Built the blog network that put Amazon's own stories and leaders at the center of how the company communicates.</p>
+        </article>
+        <article class="card">
+          <p class="card-tag">Amazon</p>
+          <h3>Company email program</h3>
+          <p>Launched Amazon's company email program, extending owned channels into a direct line with its audience.</p>
+        </article>
+        <article class="card">
+          <p class="card-tag">Porch Group</p>
+          <h3>Inspection marketing team</h3>
+          <p>Built the marketing function for the Inspection business, from strategy and hiring through execution.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <div class="when">Present</div>
+          <div class="what">
+            <h3>Marketing Lead, Inspection <span>Porch Group</span></h3>
+            <p>Runs marketing for the Inspection business and built the team that delivers it.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Earlier</div>
+          <div class="what">
+            <h3>Vice President of Communications <span>Spredfast</span></h3>
+            <p>Led a marketing and communications organization of nearly 60 people.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Earlier</div>
+          <div class="what">
+            <h3>Owned Content and Channels <span>Amazon</span></h3>
+            <p>Launched About Amazon, the Day One blog ecosystem, and the company email program.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Earlier</div>
+          <div class="what">
+            <h3>Marketing and communications <span>Coca-Cola</span></h3>
+            <p>Early career foundation in global brand and communications.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Let's talk</h2>
+      <p>If you are building a marketing function, or rebuilding one, I would like to hear about it.</p>
+      <!-- Replace the email below with your real address on gusandbrown.com -->
+      <a class="btn btn-primary" href="mailto:ashley@gusandbrown.com">ashley@gusandbrown.com</a>
+      <ul class="links">
+        <li><a href="https://github.com/ashleystro" rel="me">GitHub</a></li>
+        <li><a href="#" rel="me">LinkedIn</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Ashley. Built by hand with HTML and CSS.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
