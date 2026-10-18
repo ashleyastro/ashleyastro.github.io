@@ -1,11 +1,12 @@
 :root {
-  --bg: #faf8f5;
+  --bg: #FAF9F6;
   --surface: #ffffff;
   --text: #1c1b1a;
   --muted: #5f5b56;
   --line: #e6e1da;
-  --accent: #b4452c;
-  --accent-ink: #ffffff;
+  --accent: #10B981;
+  --accent-text: #047857;
+  --accent-ink: #1c1b1a;
   --radius: 14px;
   --max: 1040px;
 }
@@ -17,7 +18,8 @@
     --text: #f2efea;
     --muted: #a8a29a;
     --line: #2d2a28;
-    --accent: #e5775c;
+    --accent: #10B981;
+    --accent-text: #10B981;
     --accent-ink: #141312;
   }
 }
@@ -74,7 +76,7 @@ h1, h2, h3 {
   transition: color 0.2s;
 }
 
-.site-header nav a:hover { color: var(--accent); }
+.site-header nav a:hover { color: var(--accent-text); }
 
 /* Layout */
 main { padding: 0 24px; }
@@ -93,7 +95,7 @@ main { padding: 0 24px; }
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .hero h1 {
@@ -184,7 +186,7 @@ main { padding: 0 24px; }
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .card h3 { font-size: 1.3rem; margin-bottom: 10px; }
@@ -220,7 +222,7 @@ main { padding: 0 24px; }
   font-family: "Inter", sans-serif;
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--accent-text);
   margin-left: 8px;
 }
 
@@ -238,7 +240,7 @@ main { padding: 0 24px; }
 }
 
 .links a { color: var(--muted); }
-.links a:hover { color: var(--accent); }
+.links a:hover { color: var(--accent-text); }
 
 /* Footer */
 .site-footer {
