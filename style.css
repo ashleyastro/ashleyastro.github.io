@@ -1,6 +1,7 @@
 :root {
   --bg: #FFFFFF;
   --surface: #ffffff;
+  --card: #F3F4F6;
   --text: #1c1b1a;
   --muted: #5f5b56;
   --line: #e6e1da;
@@ -15,6 +16,7 @@
   :root {
     --bg: #141312;
     --surface: #1d1b1a;
+    --card: #1d1b1a;
     --text: #f2efea;
     --muted: #a8a29a;
     --line: #2d2a28;
@@ -169,8 +171,8 @@ main { padding: 0 24px; }
 
 .card {
   padding: 26px;
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background: var(--card);
+  border: 1px solid transparent;
   border-radius: var(--radius);
   transition: transform 0.2s, border-color 0.2s;
 }
