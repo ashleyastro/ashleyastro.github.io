@@ -27,17 +27,17 @@ Static portfolio site (plain HTML and CSS, no build step) hosted on GitHub Pages
 ## DNS and hosting status
 Done and verified: A records and `www` CNAME point to GitHub Pages, the custom domain is set, HTTPS is enforced (http redirects to https), and email records were kept.
 
-## Pending edits
-Done: contact links, real email (`ashley@gusandbrown.com`), full name in header, title, and footer.
-
-Still open:
-1. Fill real dates and exact titles in the Experience timeline (currently "Present" and "Earlier").
-2. Add measurable results to the Selected work cards.
+## Content status
+Site copy is aligned with the resumes (Oct 2026). The "Brand Strategy" resume is the source for the summary, hero, and About; dates, titles, and metrics match both versions. Timeline lists Porch Group, Astro Pet Health, Amazon/AWS, Spredfast, Coca-Cola, and earlier agency and Microsoft roles. Work cards: The Ride Along, AWS startup go-to-market, Day One and About Amazon, Coca-Cola Journey.
 
 ## About the owner (for copy decisions)
 - Senior marketing and content leader, 15 years of people leadership
-- Runs marketing for the Inspection business at Porch Group and built that team
-- Previously Amazon (owned content and channels: About Amazon, Day One blog ecosystem, company email program), Spredfast (VP of Communications, org of nearly 60), and Coca-Cola
+- Head of Marketing, Inspection at Porch Group (2023 to present), team of nine, full marketing P&L
+- Co-founder and CEO, Astro Pet Health (2021 to 2023)
+- Amazon and AWS (2017 to 2021): Head of Startup Digital Marketing at AWS; Head of Owned Content Channels at Amazon (Day One, About Amazon, Out for Delivery, Sustainability at Amazon)
+- Spredfast (2014 to 2017): VP Global Communications and Analyst Relations; earlier VP Social Strategy (team of 59, $9M P&L)
+- Coca-Cola (2010 to 2014): Global Group Director, Digital Communications (Coca-Cola Journey)
+- Do not publish phone number or work authorization details on the site
 - Targeting VP and Head of Marketing roles at AI and tech-forward companies
 - Brand voice: knowledgeable, direct, wry
 
