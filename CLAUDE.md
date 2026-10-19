@@ -28,7 +28,7 @@ Static portfolio site (plain HTML and CSS, no build step) hosted on GitHub Pages
 Done and verified: A records and `www` CNAME point to GitHub Pages, the custom domain is set, HTTPS is enforced (http redirects to https), and email records were kept.
 
 ## Content status
-Site copy is aligned with the resumes (Oct 2026). The "Brand Strategy" resume is the source for the summary, hero, and About; dates, titles, and metrics match both versions. Timeline lists Porch Group, Astro Pet Health, Amazon/AWS, Spredfast, Coca-Cola, and earlier agency and Microsoft roles. Work cards: The Ride Along, AWS startup go-to-market, Day One and About Amazon, Coca-Cola Journey.
+Site copy is aligned with the resumes (Oct 2026). The "Brand Strategy" resume is the source for the summary, hero, and About; dates, titles, and metrics match both versions. Timeline lists each role separately: Porch Group, Astro Pet Health, AWS and Amazon (two roles), Spredfast (two roles), Coca-Cola, and earlier agency and Microsoft roles. Work cards: The Ride Along, AWS startup go-to-market, Day One and About Amazon, Coca-Cola Journey.
 
 ## About the owner (for copy decisions)
 - Senior marketing and content leader, 15 years of people leadership
@@ -37,7 +37,8 @@ Site copy is aligned with the resumes (Oct 2026). The "Brand Strategy" resume is
 - Amazon and AWS (2017 to 2021): Head of Startup Digital Marketing at AWS; Head of Owned Content Channels at Amazon (Day One, About Amazon, Out for Delivery, Sustainability at Amazon)
 - Spredfast (2014 to 2017): VP Global Communications and Analyst Relations; earlier VP Social Strategy (team of 59, $9M P&L)
 - Coca-Cola (2010 to 2014): Global Group Director, Digital Communications (Coca-Cola Journey)
-- Do not publish phone number or work authorization details on the site
+- Site shows EU work authorization (Contact section). Do not publish the phone number.
+- Do not mention the job search on the site (owner removed it)
 - Targeting VP and Head of Marketing roles at AI and tech-forward companies
 - Brand voice: knowledgeable, direct, wry
 
