@@ -14,6 +14,7 @@ Static portfolio site (plain HTML and CSS, no build step) hosted on GitHub Pages
 - `style.css`: all styling, with design tokens under `:root`, automatic dark mode via `prefers-color-scheme`, responsive under 640px
 - `CNAME`: contains `gusandbrown.com`. Do not delete or edit it.
 - `_config.yml`: excludes `CLAUDE.md` from the published site. Keep it, so these notes never go public.
+- `images/`: card thumbnails.
 - `CLAUDE.md`: these notes. Not published.
 
 ## Design
@@ -28,7 +29,7 @@ Static portfolio site (plain HTML and CSS, no build step) hosted on GitHub Pages
 Done and verified: A records and `www` CNAME point to GitHub Pages, the custom domain is set, HTTPS is enforced (http redirects to https), and email records were kept.
 
 ## Content status
-Site copy is aligned with the resumes (Oct 2026). The "Brand Strategy" resume is the source for the summary, hero, and About; dates, titles, and metrics match both versions. Timeline lists each role separately: Porch Group, Astro Pet Health, AWS and Amazon (two roles), Spredfast (two roles), Coca-Cola, and earlier agency and Microsoft roles. Work cards: The Ride Along, AWS startup go-to-market, Day One and About Amazon, Coca-Cola Journey. After Experience come Awards and recognition (five awards) and Volunteer experience (Victory Fund, Saving Great Animals), styled as a two-column list (organization left, title right) with `.honors` in `style.css`. No cards, no bullets.
+Site copy is aligned with the resumes (Oct 2026). The "Brand Strategy" resume is the source for the summary, hero, and About; dates, titles, and metrics match both versions. Timeline lists each role separately: Porch Group, Astro Pet Health, AWS and Amazon (two roles), Spredfast (two roles), Coca-Cola, and earlier agency and Microsoft roles. Work cards (two rows of four, each with a thumbnail and a green "See more" link, except AWS which has no link): The Ride Along, AWS startup go-to-market, Day One and About Amazon, Coca-Cola Journey (links to the 2012 New York Times story); then Sustainability at Amazon, Palmtech rebrand, Home Inspector Pro rebrand, Inspector Services Group rebrand. Thumbnails are 800x500 JPGs in `images/` (homepage screenshots taken Oct 2026, About Amazon uses its official preview image). AWS and Coca-Cola Journey use colored text tiles because no usable image was available. After Experience come Awards and recognition (five awards) and Volunteer experience (Victory Fund, Saving Great Animals), styled as a two-column list (organization left, title right) with `.honors` in `style.css`. No cards, no bullets.
 
 ## About the owner (for copy decisions)
 - Senior marketing and content leader, 15 years of people leadership

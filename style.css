@@ -170,6 +170,9 @@ main { padding: 0 24px; }
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   padding: 26px;
   background: var(--card);
   border: 1px solid transparent;
@@ -192,7 +195,45 @@ main { padding: 0 24px; }
 }
 
 .card h3 { font-size: 1.3rem; margin-bottom: 10px; }
-.card p:last-child { margin: 0; color: var(--muted); font-size: 0.97rem; }
+.card h3 + p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+
+.card-thumb {
+  display: block;
+  width: calc(100% + 52px);
+  height: auto;
+  aspect-ratio: 16 / 10;
+  margin: -26px -26px 22px;
+  object-fit: cover;
+  object-position: top;
+  border-bottom: 1px solid var(--line);
+}
+
+.card-thumb-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+.thumb-coke { background: #E61D2B; }
+.thumb-aws { background: #232F3E; }
+
+.card-link {
+  margin-top: auto;
+  padding-top: 18px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-text);
+  text-decoration: none;
+}
+
+.card-link:hover { text-decoration: underline; }
 
 /* Timeline */
 .timeline {
