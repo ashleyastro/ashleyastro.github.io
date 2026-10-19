@@ -232,21 +232,25 @@ main { padding: 0 24px; }
 
 /* Awards and volunteer */
 .honors {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .honors li {
-  padding: 22px 24px;
-  background: var(--card);
-  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 24px;
+  align-items: baseline;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
 }
 
+.honors li:first-child { padding-top: 0; }
+.honors li:last-child { border-bottom: 0; padding-bottom: 0; }
+
 .honors h3 { font-size: 1.1rem; }
+.honors p { margin: 0; color: var(--muted); }
 
 /* Contact */
 .contact p { max-width: 52ch; margin: 0 0 26px; color: var(--muted); font-size: 1.1rem; }
@@ -279,6 +283,7 @@ main { padding: 0 24px; }
   .site-header nav a { font-size: 0.85rem; }
   .hero { padding: 70px 0 60px; }
   .timeline li { grid-template-columns: 1fr; gap: 4px; }
+  .honors li { grid-template-columns: 1fr; gap: 4px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

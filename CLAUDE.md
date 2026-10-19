@@ -28,7 +28,7 @@ Static portfolio site (plain HTML and CSS, no build step) hosted on GitHub Pages
 Done and verified: A records and `www` CNAME point to GitHub Pages, the custom domain is set, HTTPS is enforced (http redirects to https), and email records were kept.
 
 ## Content status
-Site copy is aligned with the resumes (Oct 2026). The "Brand Strategy" resume is the source for the summary, hero, and About; dates, titles, and metrics match both versions. Timeline lists each role separately: Porch Group, Astro Pet Health, AWS and Amazon (two roles), Spredfast (two roles), Coca-Cola, and earlier agency and Microsoft roles. Work cards: The Ride Along, AWS startup go-to-market, Day One and About Amazon, Coca-Cola Journey. After Experience come Awards and recognition (five awards) and Volunteer experience (Victory Fund, Saving Great Animals), styled with the `.honors` grid in `style.css`.
+Site copy is aligned with the resumes (Oct 2026). The "Brand Strategy" resume is the source for the summary, hero, and About; dates, titles, and metrics match both versions. Timeline lists each role separately: Porch Group, Astro Pet Health, AWS and Amazon (two roles), Spredfast (two roles), Coca-Cola, and earlier agency and Microsoft roles. Work cards: The Ride Along, AWS startup go-to-market, Day One and About Amazon, Coca-Cola Journey. After Experience come Awards and recognition (five awards) and Volunteer experience (Victory Fund, Saving Great Animals), styled as a two-column list (organization left, title right) with `.honors` in `style.css`. No cards, no bullets.
 
 ## About the owner (for copy decisions)
 - Senior marketing and content leader, 15 years of people leadership
