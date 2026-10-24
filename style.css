@@ -299,7 +299,8 @@ main { padding: 0 24px; }
 
 .links {
   display: flex;
-  gap: 22px;
+  flex-wrap: wrap;
+  gap: 12px 22px;
   list-style: none;
   padding: 0;
   margin: 28px 0 0;
