@@ -336,16 +336,16 @@ main { padding: 0 24px; }
 /* Consent banner */
 .consent {
   position: fixed;
-  left: 16px;
-  right: 16px;
+  left: 50%;
   bottom: 16px;
   z-index: 20;
+  transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 14px 20px;
+  width: calc(100% - 32px);
   max-width: 620px;
-  margin: 0 auto;
   padding: 18px 20px;
   background: var(--surface);
   border: 1px solid var(--line);

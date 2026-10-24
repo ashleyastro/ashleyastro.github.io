@@ -15,7 +15,7 @@ Static portfolio site (plain HTML and CSS, no build step) hosted on GitHub Pages
 - `CNAME`: contains `gusandbrown.com`. Do not delete or edit it.
 - `_config.yml`: excludes `CLAUDE.md` from the published site. Keep it, so these notes never go public.
 - Google Analytics 4 tag (ID G-H9D0B34XHW) sits immediately after `<head>` in `index.html`. Keep it first in the head.
-- Consent: Google Consent Mode v2 in that head script. Ads storage denied everywhere; analytics denied by default in the EEA, UK, and Switzerland until the visitor accepts. The choice is saved in localStorage (`ga-consent`). The banner (`#consent`) shows until a choice is made; the footer "Cookie settings" link reopens it. Declining also clears `_ga` cookies.
+- Consent: Google Consent Mode v2 in that head script. Ads storage denied; analytics denied for every visitor until they accept (region-specific defaults were tried and dropped because Google's region matching misfired in testing). The choice is saved in localStorage (`ga-consent`). The banner (`#consent`) shows until a choice is made; the footer "Cookie settings" link reopens it. Declining also clears `_ga` cookies.
 - `images/`: card thumbnails.
 - `Ashley_Brown_Resume.pdf`: public resume, linked from Let's talk. Made from the July 2026 resume with the phone number removed and languages (French Intermediate, Italian Beginner) changed to match the site. To update it, replace this file with a new PDF that also has no phone number.
 - `CLAUDE.md`: these notes. Not published.

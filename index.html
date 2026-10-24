@@ -6,12 +6,8 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    // Consent Mode: no ads storage anywhere; analytics waits for consent in the EEA, UK, and Switzerland
-    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
-    gtag('consent', 'default', {
-      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied',
-      region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']
-    });
+    // Consent Mode: no ads storage, and analytics cookies wait until the visitor accepts
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
     try {
       var saved = localStorage.getItem('ga-consent');
       if (saved === 'granted' || saved === 'denied') gtag('consent', 'update', { analytics_storage: saved });
