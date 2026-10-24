@@ -14,6 +14,7 @@ Static portfolio site (plain HTML and CSS, no build step) hosted on GitHub Pages
 - `style.css`: all styling, with design tokens under `:root`, automatic dark mode via `prefers-color-scheme`, responsive under 640px
 - `CNAME`: contains `gusandbrown.com`. Do not delete or edit it.
 - `_config.yml`: excludes `CLAUDE.md` from the published site. Keep it, so these notes never go public.
+- Google Analytics 4 tag (ID G-H9D0B34XHW) sits immediately after `<head>` in `index.html`. Keep it first in the head.
 - `images/`: card thumbnails.
 - `Ashley_Brown_Resume.pdf`: public resume, linked from Let's talk. Made from the July 2026 resume with the phone number removed and languages (French Intermediate, Italian Beginner) changed to match the site. To update it, replace this file with a new PDF that also has no phone number.
 - `CLAUDE.md`: these notes. Not published.
