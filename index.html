@@ -6,6 +6,16 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Consent Mode: no ads storage anywhere; analytics waits for consent in the EEA, UK, and Switzerland
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+    gtag('consent', 'default', {
+      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied',
+      region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']
+    });
+    try {
+      var saved = localStorage.getItem('ga-consent');
+      if (saved === 'granted' || saved === 'denied') gtag('consent', 'update', { analytics_storage: saved });
+    } catch (e) {}
     gtag('js', new Date());
 
     gtag('config', 'G-H9D0B34XHW');
@@ -255,10 +265,46 @@
 
   <footer class="site-footer">
     <p>&copy; <span id="year">2026</span> Ashley Brown. Built by hand with HTML and CSS.</p>
+    <p><button type="button" class="link-button" id="consent-settings">Cookie settings</button></p>
   </footer>
+
+  <div class="consent" id="consent" role="region" aria-label="Cookie consent" hidden>
+    <p>This site uses Google Analytics cookies to understand how visitors use it. No ads, and your data is never sold.</p>
+    <div class="consent-actions">
+      <button type="button" class="btn btn-primary" id="consent-accept">Accept</button>
+      <button type="button" class="btn btn-ghost" id="consent-decline">Decline</button>
+    </div>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      var banner = document.getElementById('consent');
+      function saved() { try { return localStorage.getItem('ga-consent'); } catch (e) { return null; } }
+      function choose(value) {
+        try { localStorage.setItem('ga-consent', value); } catch (e) {}
+        gtag('consent', 'update', { analytics_storage: value });
+        if (value === 'denied') {
+          // Remove any analytics cookies already set
+          document.cookie.split(';').forEach(function (c) {
+            var name = c.split('=')[0].trim();
+            if (name.indexOf('_ga') === 0) {
+              document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+              document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.' + location.hostname;
+            }
+          });
+        }
+        banner.hidden = true;
+      }
+      if (!saved()) banner.hidden = false;
+      document.getElementById('consent-accept').addEventListener('click', function () { choose('granted'); });
+      document.getElementById('consent-decline').addEventListener('click', function () { choose('denied'); });
+      document.getElementById('consent-settings').addEventListener('click', function () {
+        banner.hidden = false;
+        document.getElementById('consent-accept').focus();
+      });
+    })();
   </script>
 </body>
 </html>
