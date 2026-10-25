@@ -11,7 +11,7 @@ Static portfolio site (plain HTML and CSS, no build step) hosted on GitHub Pages
 
 ## Files
 - `index.html`: home page with hero, About, Selected work (cards), Experience (timeline), Awards and recognition, Volunteer experience, Good to know, Contact
-- `speaking.html`: Speaking page (headshot, intro naming SXSW, PRWeek Conference, Coca-Cola, Target, Walmart; four topic cards under "What Ashley speaks about"; booking call to action as a gray band under the topic cards). Written in the third person, using the name instead of pronouns.
+- `speaking.html`: Speaking page (headshot, intro naming SXSW, the PRWeek conference, Coca-Cola, Target, Walmart; four topic cards under "What Ashley speaks about"; booking call to action as a gray band under the topic cards). Written in the third person, using the name instead of pronouns.
 - Both pages share the same header (About, Work, Experience, Speaking, Contact) and footer (two columns: name, tagline, copyright, and Cookie settings on the left; links to every section, Speaking, and the resume on the right, reading down two columns). When adding a section or page, update the header and footer on both pages.
 - `site.js`: shared script for the footer year and the consent banner, loaded by both pages.
 - `style.css`: all styling, with design tokens under `:root`, automatic dark mode via `prefers-color-scheme`, responsive under 640px
