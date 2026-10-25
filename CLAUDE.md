@@ -51,6 +51,7 @@ Site copy is aligned with the resumes (Oct 2026). The "Brand Strategy" resume is
 - Brand voice: knowledgeable, direct, wry
 
 ## Working preferences
+- Commit as the owner so work counts on their GitHub profile: run `git config user.name "Ashley Brown"` and `git config user.email "87669769+ashleyastro@users.noreply.github.com"` in the repo before committing (a fresh clone does not keep this). Keep the Co-Authored-By: Claude line in commit messages.
 - Never use em dashes in code comments, copy, or messages
 - Concise, confident, professional tone
 - Double check work for errors before presenting it
