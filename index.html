@@ -33,6 +33,7 @@
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#experience">Experience</a>
+      <a href="speaking.html">Speaking</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -260,6 +261,17 @@
   </main>
 
   <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#work">Selected work</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#facts">Good to know</a>
+      <a href="speaking.html">Speaking</a>
+      <a href="#contact">Contact</a>
+      <a href="Ashley_Brown_Resume.pdf" download>Resume (PDF)</a>
+    </nav>
     <p>&copy; <span id="year">2026</span> Ashley Brown. Built by hand with HTML and CSS.</p>
     <p><button type="button" class="link-button" id="consent-settings">Cookie settings</button></p>
   </footer>
@@ -272,35 +284,6 @@
     </div>
   </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    (function () {
-      var banner = document.getElementById('consent');
-      function saved() { try { return localStorage.getItem('ga-consent'); } catch (e) { return null; } }
-      function choose(value) {
-        try { localStorage.setItem('ga-consent', value); } catch (e) {}
-        gtag('consent', 'update', { analytics_storage: value });
-        if (value === 'denied') {
-          // Remove any analytics cookies already set
-          document.cookie.split(';').forEach(function (c) {
-            var name = c.split('=')[0].trim();
-            if (name.indexOf('_ga') === 0) {
-              document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
-              document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.' + location.hostname;
-            }
-          });
-        }
-        banner.hidden = true;
-      }
-      if (!saved()) banner.hidden = false;
-      document.getElementById('consent-accept').addEventListener('click', function () { choose('granted'); });
-      document.getElementById('consent-decline').addEventListener('click', function () { choose('denied'); });
-      document.getElementById('consent-settings').addEventListener('click', function () {
-        banner.hidden = false;
-        document.getElementById('consent-accept').focus();
-      });
-    })();
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>

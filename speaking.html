@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9D0B34XHW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // Consent Mode: no ads storage; analytics stays on unless the visitor declines
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+    try {
+      var saved = localStorage.getItem('ga-consent');
+      if (saved === 'granted' || saved === 'denied') gtag('consent', 'update', { analytics_storage: saved });
+    } catch (e) {}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H9D0B34XHW');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speaking | Ashley Brown</title>
+  <meta name="description" content="Ashley Brown has spoken at dozens of conferences and corporate events, including SXSW, Coca-Cola, Target, and Walmart. Topics: bravery in marketing, cultural leadership, superfans, and making the basics brilliant.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Merriweather:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="/">Ashley Brown</a>
+    <nav aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#work">Work</a>
+      <a href="/#experience">Experience</a>
+      <a href="speaking.html" aria-current="page">Speaking</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero speaking-hero">
+      <div class="speaking-intro">
+        <p class="eyebrow">Speaking</p>
+        <h1>Stories from the work, minus the jargon.</h1>
+        <p class="lede">Ashley Brown has spoken at dozens of conferences and corporate events, including SXSW, Coca-Cola, Target, and Walmart. With 15+ years leading brand, content, and communications at Coca-Cola, Amazon, AWS, Spredfast, and Porch Group, Ashley brings a practitioner's view, real examples, and a healthy dose of humor.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:ashley@gusandbrown.com?subject=Speaking%20inquiry">Invite Ashley to speak</a>
+          <a class="btn btn-ghost" href="#topics">See topics</a>
+        </div>
+      </div>
+      <img class="headshot" src="images/headshot.jpg" alt="Ashley Brown" width="449" height="449">
+    </section>
+
+    <section id="topics" class="section">
+      <h2>What Ashley speaks about</h2>
+      <div class="cards cards-2">
+        <article class="card">
+          <p class="card-tag">Topic 01</p>
+          <h3>Bravery in corporate marketing and communications</h3>
+          <p>Authentic, plain-spoken marketing and communications beat safe, polished, and forgettable. How to find the nerve to say what you mean, and get it approved inside a big company.</p>
+        </article>
+        <article class="card">
+          <p class="card-tag">Topic 02</p>
+          <h3>Cultural leadership</h3>
+          <p>When and how a company should show up in cultural moments, in ways that are relevant to the business and authentic to who it is.</p>
+        </article>
+        <article class="card">
+          <p class="card-tag">Topic 03</p>
+          <h3>From followers to superfans</h3>
+          <p>How to find, activate, and engage your most loyal customers, and turn them into a community that grows the brand with you.</p>
+        </article>
+        <article class="card">
+          <p class="card-tag">Topic 04</p>
+          <h3>Making the basics brilliant</h3>
+          <p>Flawless marketing operations and execution decide who wins. Raising the bar with every action, setting impossibly high standards, and never settling for &ldquo;good enough.&rdquo;</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="book" class="section contact">
+      <h2>Bring Ashley to your event</h2>
+      <p>Keynotes, panels, fireside chats, and internal leadership events. Tell Ashley about your audience and the date.</p>
+      <a class="btn btn-primary" href="mailto:ashley@gusandbrown.com?subject=Speaking%20inquiry">ashley@gusandbrown.com</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/#about">About</a>
+      <a href="/#work">Selected work</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#awards">Awards</a>
+      <a href="/#volunteer">Volunteer</a>
+      <a href="/#facts">Good to know</a>
+      <a href="speaking.html" aria-current="page">Speaking</a>
+      <a href="/#contact">Contact</a>
+      <a href="Ashley_Brown_Resume.pdf" download>Resume (PDF)</a>
+    </nav>
+    <p>&copy; <span id="year">2026</span> Ashley Brown. Built by hand with HTML and CSS.</p>
+    <p><button type="button" class="link-button" id="consent-settings">Cookie settings</button></p>
+  </footer>
+
+  <div class="consent" id="consent" role="region" aria-label="Cookie consent" hidden>
+    <p>This site uses Google Analytics cookies to understand how visitors use it. No ads, and your data is never sold.</p>
+    <div class="consent-actions">
+      <button type="button" class="btn btn-primary" id="consent-accept">Accept</button>
+      <button type="button" class="btn btn-ghost" id="consent-decline">Decline</button>
+    </div>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+</html>

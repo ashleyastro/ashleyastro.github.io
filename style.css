@@ -78,7 +78,8 @@ h1, h2, h3 {
   transition: color 0.2s;
 }
 
-.site-header nav a:hover { color: var(--accent-text); }
+.site-header nav a:hover,
+.site-header nav a[aria-current="page"] { color: var(--accent-text); }
 
 /* Layout */
 main { padding: 0 24px; }
@@ -271,6 +272,26 @@ main { padding: 0 24px; }
 
 .what p { margin: 8px 0 0; color: var(--muted); }
 
+/* Speaking */
+.speaking-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 56px;
+  align-items: center;
+}
+
+.headshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--card);
+}
+
+.cards-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
 /* Awards and volunteer */
 .honors {
   list-style: none;
@@ -345,6 +366,26 @@ main { padding: 0 24px; }
 }
 
 .site-footer p { margin: 0; }
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 22px;
+  max-width: var(--max);
+  margin: 0 auto 22px;
+}
+
+.footer-nav a {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-nav a[aria-current="page"] { color: var(--accent-text); }
 .site-footer p + p { margin-top: 8px; }
 
 .link-button {
@@ -404,6 +445,11 @@ main { padding: 0 24px; }
   .site-header nav { gap: 14px; }
   .site-header nav a { font-size: 0.85rem; }
   .hero { padding: 70px 0 60px; }
+  .site-header { flex-wrap: wrap; row-gap: 10px; }
+  .site-header nav { width: 100%; justify-content: space-between; }
+  .speaking-hero { grid-template-columns: 1fr; gap: 32px; }
+  .headshot { width: 180px; order: -1; }
+  .cards-2 { grid-template-columns: 1fr; }
   .timeline li { grid-template-columns: 1fr; gap: 4px; }
   .honors li { grid-template-columns: 1fr; gap: 4px; }
   .honors-logos li { gap: 10px; }

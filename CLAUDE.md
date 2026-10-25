@@ -10,13 +10,16 @@ Static portfolio site (plain HTML and CSS, no build step) hosted on GitHub Pages
 - Domain registrar: Namecheap. gusandbrown.com also handles email.
 
 ## Files
-- `index.html`: single page with hero, About, Selected work (cards), Experience (timeline), Awards and recognition, Volunteer experience, Contact
+- `index.html`: home page with hero, About, Selected work (cards), Experience (timeline), Awards and recognition, Volunteer experience, Good to know, Contact
+- `speaking.html`: Speaking page (headshot, intro naming SXSW, Coca-Cola, Target, Walmart; four topic cards under "What Ashley speaks about"; booking call to action). Written in the third person, using the name instead of pronouns.
+- Both pages share the same header (About, Work, Experience, Speaking, Contact) and footer (links to every section, Speaking, and the resume). When adding a section or page, update the header and footer on both pages.
+- `site.js`: shared script for the footer year and the consent banner, loaded by both pages.
 - `style.css`: all styling, with design tokens under `:root`, automatic dark mode via `prefers-color-scheme`, responsive under 640px
 - `CNAME`: contains `gusandbrown.com`. Do not delete or edit it.
 - `_config.yml`: excludes `CLAUDE.md` from the published site. Keep it, so these notes never go public.
-- Google Analytics 4 tag (ID G-H9D0B34XHW) sits immediately after `<head>` in `index.html`. Keep it first in the head.
+- Google Analytics 4 tag (ID G-H9D0B34XHW) sits immediately after `<head>` in `index.html` and `speaking.html`. Keep it first in the head of every page.
 - Consent: Google Consent Mode v2 in that head script. Ads storage denied; analytics on by default for everyone and turned off only when a visitor declines (owner's choice, Oct 2026). Region-specific defaults were tried and dropped because Google's region matching misfired in testing. The choice is saved in localStorage (`ga-consent`). The banner (`#consent`) shows until a choice is made; the footer "Cookie settings" link reopens it. Declining also clears `_ga` cookies.
-- `images/`: card thumbnails. `images/logos/`: award logos (Ad Age, PRWeek, Ragan PR Daily as trimmed SVGs from each publisher's site; PR Daily recolored to black). The Holmes Report (now PRovoke Media) has no logo and shows a text label in the same white chip.
+- `images/`: card thumbnails and `headshot.jpg`. `images/logos/`: award logos (Ad Age, PRWeek, Ragan PR Daily as trimmed SVGs from each publisher's site; PR Daily recolored to black). The Holmes Report (now PRovoke Media) has no logo and shows a text label in the same white chip.
 - `Ashley_Brown_Resume.pdf`: public resume, linked from Let's talk. Made from the July 2026 resume with the phone number removed and languages (French Intermediate, Italian Beginner) changed to match the site. To update it, replace this file with a new PDF that also has no phone number.
 - `CLAUDE.md`: these notes. Not published.
 
