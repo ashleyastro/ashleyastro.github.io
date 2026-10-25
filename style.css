@@ -294,6 +294,32 @@ main { padding: 0 24px; }
 .honors p { margin: 0; color: var(--muted); }
 .honors .fact { color: var(--text); }
 
+.honors-logos li { align-items: center; }
+
+.logo-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 52px;
+  padding: 0 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.logo-chip .logo { display: block; width: auto; max-width: 100%; height: 24px; }
+.logo-chip .logo-tall { height: 30px; }
+
+.logo-chip-text {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: #1c1b1a;
+}
+
 /* Contact */
 .contact p { max-width: 52ch; margin: 0 0 26px; color: var(--muted); font-size: 1.1rem; }
 
@@ -380,6 +406,7 @@ main { padding: 0 24px; }
   .hero { padding: 70px 0 60px; }
   .timeline li { grid-template-columns: 1fr; gap: 4px; }
   .honors li { grid-template-columns: 1fr; gap: 4px; }
+  .honors-logos li { gap: 10px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
