@@ -147,20 +147,8 @@ main { padding: 0 24px; }
   opacity: 0.55;
 }
 
-.logo-word {
-  display: block;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: #000000;
-  opacity: 0.55;
-}
-
 @media (prefers-color-scheme: dark) {
   .logo-row img { filter: brightness(0) invert(1); opacity: 0.6; }
-  .logo-word { color: #ffffff; opacity: 0.6; }
 }
 
 /* Buttons */
@@ -525,7 +513,6 @@ main { padding: 0 24px; }
   .logo-row { margin-top: 44px; }
   .logo-row ul { gap: 18px 30px; }
   .logo-row img { height: calc(var(--h) * 0.8); }
-  .logo-word { font-size: 1.15rem; }
   .site-header { flex-wrap: wrap; row-gap: 10px; }
   .site-header nav { width: 100%; justify-content: space-between; }
   .speaking-hero { grid-template-columns: 1fr; gap: 28px; padding: 48px 0 44px; }
