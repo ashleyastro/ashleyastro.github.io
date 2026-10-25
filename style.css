@@ -116,6 +116,53 @@ main { padding: 0 24px; }
 
 .actions { display: flex; flex-wrap: wrap; gap: 14px; }
 
+/* Company logo row */
+.logo-row { margin-top: 56px; }
+
+.logo-row-label {
+  margin: 0 0 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.logo-row ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px 44px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Logos render as one flat color so the row reads as a set */
+.logo-row img {
+  display: block;
+  width: auto;
+  height: var(--h);
+  filter: brightness(0);
+  opacity: 0.55;
+}
+
+.logo-word {
+  display: block;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #000000;
+  opacity: 0.55;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-row img { filter: brightness(0) invert(1); opacity: 0.6; }
+  .logo-word { color: #ffffff; opacity: 0.6; }
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -475,6 +522,10 @@ main { padding: 0 24px; }
   .site-header nav { gap: 14px; }
   .site-header nav a { font-size: 0.85rem; }
   .hero { padding: 70px 0 60px; }
+  .logo-row { margin-top: 44px; }
+  .logo-row ul { gap: 18px 30px; }
+  .logo-row img { height: calc(var(--h) * 0.8); }
+  .logo-word { font-size: 1.15rem; }
   .site-header { flex-wrap: wrap; row-gap: 10px; }
   .site-header nav { width: 100%; justify-content: space-between; }
   .speaking-hero { grid-template-columns: 1fr; gap: 28px; padding: 48px 0 44px; }
