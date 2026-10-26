@@ -271,6 +271,7 @@ main { padding: 0 24px; }
 
 /* Projects feature */
 .section-intro { max-width: 62ch; margin: -12px 0 24px; color: var(--muted); }
+.section-intro + .timeline > li:first-child { padding-top: 4px; }
 
 .feature {
   display: grid;
