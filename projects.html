@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9D0B34XHW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // Consent Mode: no ads storage; analytics stays on unless the visitor declines
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+    try {
+      var saved = localStorage.getItem('ga-consent');
+      if (saved === 'granted' || saved === 'denied') gtag('consent', 'update', { analytics_storage: saved });
+    } catch (e) {}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H9D0B34XHW');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects and tools | Ashley Brown</title>
+  <meta name="description" content="Working tools Ashley Brown has built for marketing and communications teams, including MediaScout, an AI-ready journalist finder for SaaS PR. Code on GitHub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Merriweather:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="/">Ashley Brown</a>
+    <nav aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#work">Work</a>
+      <a href="/#experience">Experience</a>
+      <a href="speaking.html">Speaking</a>
+      <a href="projects.html" aria-current="page">Projects &amp; tools</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero projects-hero">
+      <p class="eyebrow">Projects &amp; tools</p>
+      <h1>Tools I build to make the work faster.</h1>
+      <p class="lede">I build with AI the way I lead teams: start with a real problem, ship something useful, and keep people in the loop. These are working tools, with the code open on GitHub.</p>
+    </section>
+
+    <section id="mediascout" class="section case-study">
+      <p class="card-tag">Case study</p>
+      <h2>MediaScout: a journalist finder for SaaS PR</h2>
+      <p class="case-summary">Name a software category or a public executive, and MediaScout returns every reporter and blogger who has published at least five stories on it across 214 outlets in North America, the EU, and the UK, with their published contact details.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://github.com/ashleyastro/mediascout" target="_blank" rel="noopener noreferrer">View the code on GitHub</a>
+      </div>
+
+      <figure class="case-figure">
+        <img src="images/mediascout.jpg" alt="MediaScout results table listing journalists, their story counts, outlets, contact details, and recent headlines" width="1600" height="1000" loading="lazy">
+        <figcaption>The demo build, running on fictional outlets and journalists.</figcaption>
+      </figure>
+
+      <div class="case-grid">
+        <div class="case-block">
+          <h3>The problem</h3>
+          <p>Building a targeted media list is slow, manual work. Paid databases cost thousands a year and go stale fast. The best signal of who will cover a story is what a reporter has actually written, and that takes hours to piece together by hand.</p>
+        </div>
+        <div class="case-block">
+          <h3>What it does</h3>
+          <ul class="case-list">
+            <li>Scans outlet sitemaps and feeds, plus the GDELT and NewsAPI news indexes, for stories on a SaaS category, a keyword, or a named executive.</li>
+            <li>Reads each byline and counts matching stories per journalist across outlets. Five or more makes the list.</li>
+            <li>Pulls published contact details from author pages, each labeled by source and confidence.</li>
+            <li>Exports to CSV, JSON, or Markdown, sends the list by email, or hands it to Claude or ChatGPT with an outreach prompt ready to go.</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h3>How it is built</h3>
+          <ul class="case-list">
+            <li>Python, FastAPI, and SQLite, with a polite crawler that follows each site's robots.txt and rate limits.</li>
+            <li>An MCP server, so Claude and ChatGPT can run scans and read media lists right inside a chat.</li>
+            <li>An opt-out list that removes anyone from every result and export, built with GDPR in mind.</li>
+            <li>A demo mode on fictional data, so anyone can try it without touching a real inbox.</li>
+            <li>Designed and directed by me, built with Claude Code, and covered by 30 automated tests.</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h3>Why it matters</h3>
+          <p>Good PR targeting is a data problem dressed up as a relationships problem. MediaScout does the research, so the team can spend its time on the part that wins coverage: the pitch.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-id">
+        <a class="brand" href="/">Ashley Brown</a>
+        <p>Brand strategy and marketing leadership.</p>
+        <p>&copy; <span id="year">2026</span> Ashley Brown. Built by hand with HTML and CSS.</p>
+        <p><button type="button" class="link-button" id="consent-settings">Cookie settings</button></p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/#about">About</a>
+        <a href="/#work">Selected work</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#awards">Awards</a>
+        <a href="/#volunteer">Volunteer</a>
+        <a href="/#facts">Good to know</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="projects.html" aria-current="page">Projects &amp; tools</a>
+        <a href="/#contact">Contact</a>
+        <a href="Ashley_Brown_Resume.pdf" download>Resume (PDF)</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="consent" id="consent" role="region" aria-label="Cookie consent" hidden>
+    <p>This site uses Google Analytics cookies to understand how visitors use it. No ads, and your data is never sold.</p>
+    <div class="consent-actions">
+      <button type="button" class="btn btn-primary" id="consent-accept">Accept</button>
+      <button type="button" class="btn btn-ghost" id="consent-decline">Decline</button>
+    </div>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+</html>

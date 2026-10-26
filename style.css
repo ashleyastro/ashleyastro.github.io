@@ -347,6 +347,36 @@ main { padding: 0 24px; }
 .cta-band h3 { font-size: 1.3rem; }
 .cta-band p { margin: 6px 0 0; color: var(--muted); }
 
+/* Projects and tools */
+.projects-hero { padding: 72px 0 56px; }
+.projects-hero h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); max-width: 18ch; }
+.projects-hero .lede { max-width: 60ch; margin: 22px 0 0; }
+
+.case-study h2 { margin-bottom: 18px; }
+.case-summary { max-width: 62ch; margin: 0 0 28px; font-size: 1.12rem; color: var(--muted); }
+
+.case-figure { margin: 40px 0 0; }
+.case-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.case-figure figcaption { margin-top: 10px; font-size: 0.88rem; color: var(--muted); }
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+.case-block { padding: 26px; background: var(--card); border-radius: var(--radius); }
+.case-block h3 { font-size: 1.2rem; margin-bottom: 12px; }
+.case-block p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+.case-list { margin: 0; padding-left: 1.1em; color: var(--muted); font-size: 0.97rem; }
+.case-list li + li { margin-top: 8px; }
+
 /* Awards and volunteer */
 .honors {
   list-style: none;
@@ -518,6 +548,9 @@ main { padding: 0 24px; }
   .footer-inner { grid-template-columns: 1fr; }
   .cta-band { padding: 24px; }
   .cards-2 { grid-template-columns: 1fr; }
+  .case-grid { grid-template-columns: 1fr; }
+  .projects-hero { padding: 48px 0 40px; }
+  .site-header nav { display: grid; grid-template-columns: repeat(3, auto); justify-content: space-between; row-gap: 6px; }
   .timeline li { grid-template-columns: 1fr; gap: 4px; }
   .honors li { grid-template-columns: 1fr; gap: 4px; }
   .honors-logos li { gap: 10px; }
