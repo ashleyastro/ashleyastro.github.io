@@ -138,18 +138,16 @@ main { padding: 0 24px; }
   list-style: none;
 }
 
-/* Logos render as one flat color so the row reads as a set */
+/* Full-color logos; dark mode swaps in white-text versions via <picture> */
+.logo-row picture { display: block; }
+
 .logo-row img {
   display: block;
   width: auto;
   height: var(--h);
-  filter: brightness(0);
-  opacity: 0.55;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo-row img { filter: brightness(0) invert(1); opacity: 0.6; }
-}
+
 
 /* Buttons */
 .btn {
