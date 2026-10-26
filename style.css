@@ -270,6 +270,8 @@ main { padding: 0 24px; }
 .card-link:hover { text-decoration: underline; }
 
 /* Projects feature */
+.section-intro { max-width: 62ch; margin: -12px 0 24px; color: var(--muted); }
+
 .feature {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 320px;
