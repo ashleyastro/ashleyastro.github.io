@@ -69,7 +69,16 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-.site-header nav { display: flex; gap: 22px; }
+.site-header nav { display: flex; gap: 22px; margin-left: auto; }
+
+.header-github {
+  display: flex;
+  margin-left: 24px;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.header-github:hover { color: var(--accent-text); }
 
 .site-header nav a {
   text-decoration: none;
@@ -500,7 +509,7 @@ main { padding: 0 24px; }
 .footer-nav {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(6, auto);
   grid-auto-flow: column;
   gap: 12px 32px;
   align-content: start;
@@ -578,7 +587,8 @@ main { padding: 0 24px; }
   .logo-row ul { gap: 16px 22px; }
   .logo-row img { height: calc(var(--h) * 0.72); }
   .site-header { flex-wrap: wrap; row-gap: 10px; }
-  .site-header nav { width: 100%; justify-content: space-between; }
+  .site-header nav { width: 100%; justify-content: space-between; order: 2; }
+  .header-github { order: 1; }
   .speaking-hero { grid-template-columns: 1fr; gap: 28px; padding: 48px 0 44px; }
   .headshot { width: 160px; order: -1; }
   .footer-inner { grid-template-columns: 1fr; }
